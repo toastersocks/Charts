@@ -449,7 +449,8 @@ open class PieChartRenderer: DataRenderer
                     {
                         if dataSet.useValueColorForLine
                         {
-                            context.setStrokeColor(dataSet.color(atIndex: j).cgColor)
+//                            context.setStrokeColor(dataSet.color(atIndex: j).cgColor)
+                            context.setStrokeColor(dataSet.valueTextColorAt(j).cgColor)
                         }
                         else if let valueLineColor = dataSet.valueLineColor
                         {
